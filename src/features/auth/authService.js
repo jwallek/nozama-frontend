@@ -4,7 +4,14 @@ const API_URL = 'https://nozama-api.onrender.com/api/users/'
 
 //register user
 const register = async (userData) => {
-    const response = await axios.post(API_URL, userData)
+    const config= {
+        headers:{
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE,PATCH,OPTIONS'
+        }
+
+    }
+    const response = await axios.post(API_URL, userData, config)
 
     if(response.data){
         localStorage.setItem('user', JSON.stringify(response.data))
@@ -20,7 +27,14 @@ const logout = () => {
 
 //signin user
 const signin = async (userData) => {
-    const response = await axios.post(API_URL + "login", userData)
+    const config= {
+        headers:{
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE,PATCH,OPTIONS'
+        }
+
+    }
+    const response = await axios.post(API_URL + "login", userData, config)
 
     if(response.data){
         localStorage.setItem('user', JSON.stringify(response.data))
@@ -30,14 +44,25 @@ const signin = async (userData) => {
 
 
 const getUser = async (userData) => {
-    const response = await axios.get(API_URL + "user", userData)
+    const config= {
+        headers:{
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE,PATCH,OPTIONS'
+        }
+
+    }
+    const response = await axios.get(API_URL + "user", userData, config)
     return response.data
 }
 
 const updateUser = async (userData, token) => {
     const config ={
         headers: {
-            Authorization: `Bearer ${token}`
+            Authorization: `Bearer ${token}`,
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE,PATCH,OPTIONS'  
+            }
         }
     }
     console.log(userData)
