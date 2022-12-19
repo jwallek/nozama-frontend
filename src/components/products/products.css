@@ -1,0 +1,215 @@
+.products-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.products-banner{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../../public/images/banner_group.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-attachment: fixed;
+    
+}
+.products-title{
+    height: 65vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: orangered;
+    background-color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+
+
+
+}
+.products-menu-bar{
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(44,44,44);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; 
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: white;
+    z-index: 10;
+}
+.products-menu-bar input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: white;
+    width: 1.30rem;
+    height: 1.30rem;
+    border: 0.15rem solid currentColor;
+    border-radius: 0.30rem;
+    transform: translateY(-0.075rem);
+    display: grid;
+    place-content: center;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.products-menu-bar input[type="checkbox"]::before{
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1rem 1rem orangered;
+}
+.products-menu-bar input[type="checkbox"]:checked::before{
+    transform: scale(1);
+}
+.product-menu-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products-main{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    z-index: 1;
+   
+}
+.product{
+    width: 300px;
+    height: auto;
+   
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .3s ease;
+    border-radius: 5px;
+    position: relative;
+    
+}
+.product-actions > button{
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+.modal-buy > button, .modal-save > button{
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+.product-image{
+    width: 100%;
+    height: 325px;
+    object-fit: contain;
+    object-position: center;
+    transform: scale(0.7);
+
+}
+
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal-desc{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.product-image-modal{
+    width: 70%;
+    height: 275px;
+    object-fit: contain;
+    object-position: center;
+    transform: scale(0.7);
+    margin: auto;
+}
+.product-footer{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: scale(0.8);
+}
+.product-title{
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+.product-actions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin-top: 1.5rem;
+}
+/* .product-btn{
+    width: 115px;
+    height: 35px;
+    border: 2px solid orangered;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+} */
+.product-cart, .product-save{
+    font-size: 26px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.product-cart:hover,
+.product-save:hover{
+    color: orangered
+}
+
+.modal-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.modal-star{
+    color: orangered;
+    font-size: 20px;
+    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+}
+.modal-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1rem
+}

@@ -1,0 +1,41 @@
+.account-container{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.account-title{
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 32px;
+}
+
+.account-main-wrapper{
+    height: 90vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+
+}
+.update-title{
+    height: 7vh;
+    width: 70vw;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 1rem;
+  
+
+}
+.update-form{
+    width: 50vw;
+}

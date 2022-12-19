@@ -1,0 +1,79 @@
+.header-container{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+
+}
+.header-dropdown{
+    background: none !important;
+    border: none !important;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.header-modal-body{
+    width: 100% !important;
+}
+.header-signin-form{
+    width: 100% !important;
+}
+.header-dropdown:hover{
+    color: black;
+}
+.header-dropdown::after{
+    display: none !important;
+}
+
+.header-title{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+.header-link-title{
+    text-decoration: none;
+    color: black;
+}
+.header-links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 100px;
+}
+.header-link{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.header-link > a{
+    text-decoration: none;
+    color: black;
+}
+.submit-btn{
+    width: 100% !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+.register-link{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 800px){
+    .header-links{
+        margin-right: 0;
+    }
+}

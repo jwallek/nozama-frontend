@@ -1,0 +1,65 @@
+.register-container{
+    height: auto;
+    width: 100vw;
+    
+    
+}
+.register-banner{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background: url('../../../public/images/register.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-title{
+    width: 100%;
+    height: 15%;
+    background-color: antiquewhite;
+    color: orangered;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-8rem);
+    
+
+
+}
+.register-button{
+    position: absolute !important;
+    left: calc(50% - 4rem);
+    top: 50%;
+    width: 8rem !important;
+    height: 2.5rem !important;
+    background-color: black;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.register-button:hover{
+    background-color: orangered !important;
+    color: white !important;
+    
+}
+.register-main{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+   
+}
+
+@media screen and (max-width: 980px){
+   
+}
+
