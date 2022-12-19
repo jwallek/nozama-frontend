@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/savedlist/'
+const API_URL = 'https://nozama-api.onrender.com/api/savedlist/'
 
 
 //add item

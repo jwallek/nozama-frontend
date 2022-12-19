@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/carts/'
+const API_URL = 'https://nozama-api.onrender.com/api/carts/'
 
 //add item
 const addItem = async (productData, token) => {
